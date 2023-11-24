@@ -56,7 +56,7 @@ app.post('/register', async (request, response) => {
     } else {
        await db.run(createUserQuery)
       response.status(200)
-      response.send('User created Successfully')
+      response.send('User created successfully')
     }
   } else {
     response.status(400)
